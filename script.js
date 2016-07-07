@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //sectionsColor: ['#7E71B1', '#FF4248', '#FCFF4A', '#78B831', '#000000', '#ffd618' ],
-        sectionsColor: ['#7E71B1', '#FD696D', '#FCFF4A', '#78B831', '#000000', '#ffd618' ],
+        sectionsColor: ['#344D5B', '#4AB19D', '#EBC656', '#E07A46', '#DD5B4D', '#ffd618' ],
         //sectionsColor: ['#0c1a3e', '#F8F3EA', '#a5c1e8', '#0c1a3e', '#000000', '#ffd618' ],
         css3: true
     });

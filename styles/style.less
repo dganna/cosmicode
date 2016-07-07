@@ -65,20 +65,41 @@ body {
     }
 
     &__robot {
-      -ms-transform: rotate(-27deg); /* IE 9 */
-      -webkit-transform: rotate(-27deg); /* Chrome, Safari, Opera */
-      transform: rotate(-27deg);
-      background-image: url(../images/main_rocket.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 80px;
-      height: 120px;
+      & img {
+        width: 40%;
+        height: 40%;
+      }
     }
 
     &__main_rocket {
-
-      & img {
-        width: 20%;
+      -ms-transform: rotate(-37deg);
+      -webkit-transform: rotate(-37deg);
+      transform: rotate(-37deg);
+      background-image: url(../images/main_rocket.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 280px;
+      height: 400px;
+      position: absolute;
+      top: 317px;
+      left: 9px;
+      z-index: 20;
+      &__smoke {
+        background-image: url(../images/smoke.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 680px;
+        height: 700px;
+        position: absolute;
+        bottom: -278px;
+        left: -152px;
+        z-index: 0;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
       }
     }
 
@@ -425,7 +446,7 @@ body {
           }
           &__block5 {
             left: 800px;
-            top: 380px;
+            top: 390px;
             -webkit-animation-duration: 6s;
             -ms-animation-duration: 6s;
             -o-animation-duration: 6s;
